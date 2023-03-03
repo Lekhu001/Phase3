@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+     
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d [%-6p] %c{1} - %m%n"/>
+    </Console>   
+    <file name="debugLogs" fileName="resources/restapi.log">
+          <PatternLayout pattern="%d [%-6p] %c{1} - %m%n"/>
+              </file>
+          
+    <file name="errorLogs" fileName="resources/error.log">
+          <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+    
+          <PatternLayout pattern="%d [%-6p] %c{1} - %m%n"/>
+    
+    </file>
+  </Appenders>
+ 
+   <Loggers>
+    <Root level="debug">
+      <AppenderRef ref="Console" level="debug"/>
+      <AppenderRef ref="debugLogs" level="debug"/>
+            <AppenderRef ref="errorLogs" level="debug"/>
+      
+    </Root>
+    <logger name="org.apache" level="WARN" />
+    <logger name="httpclient" level="WARN" />
+  </Loggers>
+</Configuration>

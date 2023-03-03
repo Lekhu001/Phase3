@@ -1,0 +1,12 @@
+2023-02-20 23:24:08,317 [ERROR ] AssignmentGet - Error show
+2023-02-20 23:24:38,171 [ERROR ] AssignmentGet - Error show
+2023-02-20 23:27:00,177 [ERROR ] AssignmentGet - Error show
+2023-02-20 23:59:26,540 [INFO  ] AssignmentPost - All the info show
+2023-02-20 23:59:31,430 [DEBUG ] AssignmentPost - 201
+2023-02-20 23:59:31,431 [DEBUG ] AssignmentPost - 2718
+2023-02-20 23:59:31,476 [DEBUG ] AssignmentPost - {
+    "name": "morpheus",
+    "job": "leader",
+    "id": "697",
+    "createdAt": "2023-02-20T18:29:32.310Z"
+}
